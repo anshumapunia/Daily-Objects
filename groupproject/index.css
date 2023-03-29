@@ -1,5 +1,5 @@
 /* body{
-    overflow: auto;
+    max-width: 800px;
 } */
 .first
 {
@@ -7,6 +7,8 @@
     /* height: 50px; */
     display: flex;
     background-color: rgb(255, 255, 255);
+    /* position: fixed;
+    z-index: 99999; */
 
 }
 .second >img
@@ -534,13 +536,26 @@ img:hover
 {
     margin-left: 60px;
 }
+.whole
+{
+    background-color: black;
+    height: 100px;
+    width:1140px;
+}
+.sale
+{
+    color: white;
+    padding-top: 45px;
+    padding-left: 35px;
+
+}
 
 
-@media screen and (min-width: 320px) and (max-width: 499px)
+/* @media screen and (min-width: 320px) and (max-width: 499px)
 {
     .first
     {
         height: 100%;
         width: 100%;
     }
-}
+} */

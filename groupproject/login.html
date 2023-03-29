@@ -8,7 +8,7 @@
     <style>
  .first
 {
-    border: 2px solid red;
+    /* border: 2px solid red; */
   
     display: flex;
     background-color: rgb(255, 255, 255);
@@ -167,7 +167,7 @@ li a{
 }
 .my
 {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 20px;
 }
 
@@ -175,26 +175,27 @@ li a{
 {
   text-align: center;
 }
-.ges
+/* .ges
 {
     border: 1px solid red;
-}
+} */
 .ges >div >h1{
     letter-spacing: 0;
     font-size: large;
     font-family: 'Trade Gothic LT Pro', sans-serif !important;
-    font-weight: 200;
+    font-weight: 100;
     padding-left: 10px;
+    padding-top: 10px;
 }
-.ges :hover h1
+/* .ges :hover h1
 {
     color: #20a87e; 
-}
-.ges >a
+} */
+/* .ges >a
 {
   text-decoration: none;
   color: black;
-}
+} */
 .test
 {
    
@@ -203,13 +204,17 @@ li a{
   
 
 }
+.test >a{
+    text-decoration: none;
+    color: black;
+}
 
 .test>div  >h1{
     font-family: 'Trade Gothic LT Pro', sans-serif !important;
     letter-spacing: 0;
     /* font-size: 18px; */
-    font-weight: 200;
-    font-size:large;
+    /* font-weight: 1; */
+    font-size:small;
 }
 
 /* .test :hover >div h1
@@ -554,22 +559,29 @@ li a{
         <div>
             <h1>GUEST</h1>
         </div>
-        <a href="">
             <div class="test">
+                <a href="">
                 <div>
                     <h1>Wishlist</h1>
                 </div>
+            </a>
+            <a href="">
                 <div>
                     <h1>Help Center</h1>
                 </div>
+            </a>
+            <a href="">
                 <div>
                     <h1>Rewards</h1>
                 </div>
+            </a>
+            <a href="signup.html">
                 <div>
                     <h1>Login</h1>
                 </div>
+            </a>
             </div>
-        </a>
+
     
 </div>
 </body>
