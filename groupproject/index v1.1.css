@@ -57,8 +57,15 @@ li a{
     display: none;
     position:absolute;
     background-color:white;
-    gap: 5px; 
+    gap: 5px;
+    /* position: fixed; */
+    width:500px; 
+ 
 }
+/* .submenu >div
+{
+    position: fixed;
+} */
 .submenu >div>h3
 {
  padding-left: 15px;
@@ -74,7 +81,6 @@ li a{
     display: flex;
     font-size: 12px;
     /* width: 500px; */
-
 }
 .ul1
 {
@@ -100,7 +106,7 @@ li a{
 .img2
 {
     margin: auto;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .img2 >img
@@ -112,7 +118,7 @@ li a{
 .img3
 {
     margin: auto;
-    margin-left: 4px;
+    margin-left: 10px;
 }
 .img3 >img
 {
@@ -122,6 +128,7 @@ li a{
 .img4
 {
     margin: auto;
+    margin-left: 10px;
 }
 .img4 >img
 {
@@ -131,13 +138,12 @@ li a{
 .img5
 {
     margin: auto;
-    /* margin-left: 3px; */
-    /* padding-left: 10px; */
+    margin-left: 5px;
 }
 .img5 >img
 {
   height: 200px;
-  width: 300px;
+  width: 350px;
   /* padding-left: 10px; */
 }
 .img6
