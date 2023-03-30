@@ -221,7 +221,7 @@
         if(check(data)==true ){
             alert("Sorry You are already our customer,Please go direct in signin")
            
-         
+            // window.location.href="index.html"
          }else if(email.value=="" || password.value==""){
          alert ("Please Fill All Detail")
          }
@@ -229,7 +229,9 @@
             data.push(obj) 
            localStorage.setItem("logindata",JSON.stringify(data))
            alert("Your Detail Has Saved")
+          
          }
+        //  window.location.href="index.html"
      }
         
    )
