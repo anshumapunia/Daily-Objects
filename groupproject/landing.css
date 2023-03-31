@@ -1,61 +1,4 @@
-/* body{
-    max-width: 800px;
-} */
 .first
-{
-    /* border: 2px solid red; */
-    /* height: 50px; */
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    /* position: fixed;
-    z-index: 99999; */
-
-}
-.second >img
-{
-    height:20px;
-    margin-top: 15px;
-    margin-left: 10px;
-}
-
-/* .third
-{
-    justify-content: right;
-} */
-.ul1 li
-{
-    display: inline-block;
-    list-style: none;
-}
-li a{
-    text-decoration: none;
-    padding-left: 15px;
-    padding-right: 20px;
-    font-size: small;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-}
-.ul1 li a:hover
-{
-  color: rgb(32, 168, 126);
-}
-.fourth img
-{
-    height:30px;
-    margin-top: 8px;
-    margin-left: 40px;
-}
-.fifth img
-{
-    height: 41px;
-    margin-top: 6px;
-    margin-left: 4px;
-}
-.sixth img{
-    height: 20px;
-    margin-top: 15px;
-    margin-left: 5px    ;
-} .first
 {
     /* border: 2px solid red; */
     /* height: 50px; */
@@ -71,10 +14,7 @@ li a{
     margin-left: 10px;
 }
 
-/* .third
-{
-    justify-content: right;
-} */
+
 .ul1 li
 {
     display: inline-block;
@@ -98,31 +38,26 @@ li a{
     height:30px;
     width: 35px;
     margin-top: 8px;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 .fifth img
 {
     height: 41px;
     margin-top: 6px;
-    /* margin-left: 2px; */
+    margin-left: 5px;
 }
 .sixth img{
     height: 20px;
     margin-top: 15px;
-    /* margin-left: 5px; */
+    margin-left: 10px    ;
 }
 .submenu
 {
     display: flex;
     display: none;
     position:absolute;
-    background-color: white;
-    gap: 5px;
-    /* overflow-wrap:break-word; */
-    width:500px;
-    /* max-width: 1200px;   */
-    /* min-height: 200px;
-    min-width: 200px */
+    background-color:white;
+    gap: 5px; 
 }
 .submenu >div>h3
 {
@@ -139,6 +74,7 @@ li a{
     display: flex;
     font-size: 12px;
     /* width: 500px; */
+
 }
 .ul1
 {
@@ -147,6 +83,7 @@ li a{
 .img1
 {
     display: flex;
+    background-color: white;
     
 }
 .img1>div
@@ -157,13 +94,15 @@ li a{
 .img1>div>img
 {
     height: 200px;
+    width:150px;
     margin: 10px;
 }
 .img2
 {
     margin: auto;
-    margin-left: 20px;
+    margin-left: 10px;
 }
+
 .img2 >img
 {
     height: 450px;
@@ -173,7 +112,7 @@ li a{
 .img3
 {
     margin: auto;
-    margin-left: 10px;
+    margin-left: 4px;
 }
 .img3 >img
 {
@@ -183,7 +122,6 @@ li a{
 .img4
 {
     margin: auto;
-    margin-left: 10px;
 }
 .img4 >img
 {
@@ -193,12 +131,13 @@ li a{
 .img5
 {
     margin: auto;
-    margin-left: 5px;
+    /* margin-left: 3px; */
+    /* padding-left: 10px; */
 }
 .img5 >img
 {
   height: 200px;
-  width: 350px;
+  width: 300px;
   /* padding-left: 10px; */
 }
 .img6
@@ -238,16 +177,16 @@ li a{
     /* border: 1px solid red; */
     background-color: rgb(255, 255, 255);
     margin-top: 30px;
- 
 }
 .seventh div
 {
     display: flex;
-    justify-content: center;
     /* margin-top: auto; */
     margin-top: 40px;
+    align-items: center;
+    margin:auto;
 }
-.seventh div a img
+.seventh div img
 {
     /* display: flex; */
     height: 400px;
@@ -255,7 +194,6 @@ li a{
     /* margin: auto; */
     margin-left: 45px;
     margin-top: 15px;
-    margin-right: 50px;
 
 }
 
@@ -275,7 +213,7 @@ li a{
 {
     /* display: flex; */
     height: 400px;
-    width: 500px;
+    width: 600px;
     /* margin: auto; */
     margin-left: 45px;
     margin-top: 15px;
@@ -293,11 +231,11 @@ li a{
     /* margin-top: auto; */
     margin-top: 40px;
 }
-.nineth div a  img
+.nineth div a img
 {
     /* display: flex; */
     height: 400px;
-    width: 500px;
+    width: 600px;
     /* margin: auto; */
     margin-left: 45px;
     margin-top: 15px;
@@ -309,6 +247,7 @@ li a{
     /* border: 1px solid red; */
     margin-top: 20px;
     /* display: flex; */
+    /* width: 1000px; */
 }
 .daily h2
 {
@@ -319,8 +258,9 @@ li a{
         height: 250px;
         margin: auto;
         position: relative;
-        width: 90%;
+        width: 1000px;
         display: grid;
+        overflow: hidden;
         place-items: center;
 }
  .slide-track
@@ -337,10 +277,7 @@ li a{
         100%{
             transform: translateX(calc(-250px*9));
         }
-    /* 100%
-        {
-            transform: translateY(cal(250px*9));
-        } */
+
 }
 .slide{
         height: 200px;
@@ -365,7 +302,7 @@ img:hover
         background: linear-gradient(to right,rgba(255,255,255,0) 100%);
         content: '';
         height: 100%;
-        position: absolute;
+        position:absolute;
         width: 15%;
         z-index: 2;
 }
