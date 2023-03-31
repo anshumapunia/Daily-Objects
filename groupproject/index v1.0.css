@@ -14,10 +14,7 @@
     margin-left: 10px;
 }
 
-/* .third
-{
-    justify-content: right;
-} */
+
 .ul1 li
 {
     display: inline-block;
@@ -52,6 +49,7 @@ li a{
     height: 20px;
     margin-top: 15px;
     margin-left: 5px;
+    margin-right:5px;
 }
 .submenu
 {
