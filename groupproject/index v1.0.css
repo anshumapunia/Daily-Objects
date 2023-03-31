@@ -116,6 +116,7 @@ li a{
 {
     margin: auto;
     margin-left: 10px;
+    margin-top:3px;
 }
 .img3 >img
 {
@@ -130,7 +131,7 @@ li a{
 .img4 >img
 {
   height: 200px;
-  width: 200px;  
+  width: 210px;  
 }
 .img5
 {
