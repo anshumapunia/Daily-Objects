@@ -7,7 +7,6 @@
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="./admin.css">
 </head>
-
 <body>
     <!-- ================ Navigation ================ -->
     <div class="container">
@@ -15,29 +14,29 @@
             <ul>
                 <li>
                     <a href="#">
-                        <span class="icon"><img src="/Admin Images Source/Just logo.PNG" class="logo" alt=""></span>
+                        <span class="icon"><img src="Admin Images Source/Just logo.PNG" class="logo" alt=""></span>
                         <span class="title">Daily Object</span>
                     </a>
                 </li>
-                <li>
-                    <a href="#">
+                <li type="dash">
+                    <a href="">
                         <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
                         <span class="title">Dashboard</span>
                     </a>
                 </li>
-                <li>
+                <li type="customer">
                     <a href="#">
                         <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
                         <span class="title">Customers</span>
                     </a>
                 </li>
-                <li>
+                <li type="message">
                     <a href="#">
                         <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
                         <span class="title">Messages</span>
                     </a>
                 </li>
-                <li>
+                <li type="help">
                     <a href="#">
                         <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
                         <span class="title">Help</span>
@@ -79,7 +78,7 @@
                 </div>
                  
                 <div class="user">
-                    <img src="/Admin Images Source/admin photo.webp" alt="">
+                    <img src="Admin Images Source/admin photo.webp" alt="">
                 </div>
              </div>
                  <!-- ================ Cards section ================ -->
@@ -175,6 +174,39 @@
                     </div>
                  </div>
 
+                 <!-- ================ Order Details Section ================ -->
+                 <div class="customers">
+                    <center>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Name</th>
+                                    <th>Phone No</th>
+                                    <th>Email</th>
+                                  </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                    </center>
+                  
+                 </div>
+
+
+                   <!-- ================ Sign Out Section ================ -->
+                   <center>
+                    <div class="signOut">
+                        <div class="out">
+                            <h1>Are you Sure You Want To Sign Out!</h1>
+                            <button id="signOut">Sign Me Out</button>
+                        </div>
+                     </div>
+                   </center>
+               
+
+
          </div>
 
     </div>
@@ -182,5 +214,5 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
-<script src="/admin.js"></script>
+<script src="admin.js"></script>
 </html>
