@@ -1,0 +1,93 @@
+@font-face{
+font-family:AlternateGothic2 BT;
+src: url(fonts/Alternate\ Gothic\ No2\ BT.ttf);
+}
+@font-face{
+font-family:ubuntu;
+src: url(fonts/Ubuntu-R.ttf);
+}
+
+		body {
+		font-family:verdana;
+		font-size:15px;
+		background: #34495e;
+		}
+		.login-box {
+		width: 360px;
+		height: 200px;
+		background: #ecf0f1;
+		border-radius: 7px;
+		text-align: center;
+		margin-top: 30px;
+		padding: 25px;
+		}
+		.heading {
+		text-align: center;
+		border-bottom: 3px solid #ecf0f1;
+		width: 340px;
+		margin-top: 130px;
+		}
+		.heading h1 {
+		/* display: inline-block; */
+		font-family: AlternateGothic2 BT;
+		font-weight: 500;
+		font-size: 65px;
+		position: relative;
+		top: 76px;
+		background: #34495e;
+		padding: 0 20px;
+		color: #ecf0f1;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		}
+		.login{
+		width: 333px;
+		height: 35px;
+		padding: 5px 10px 5px 15px;
+		border-radius: 5px;
+		border:none;
+		margin-bottom:15px;
+		outline: none;
+		background: white;
+		font-family: ubuntu;
+		font-size: 15px;
+		font-weight: bold;
+		border:2px solid #34495e;
+		box-shadow: 0px 0px 0px 1pt white;
+		}
+		.log{
+			/* display: inline-block; */
+			position: relative;
+			top: 126px;
+			background-color: white;
+			padding: 4px;
+		}
+		.password{
+		width: 333px;
+		height: 35px;
+		padding: 5px 10px 5px 15px;
+		border-radius: 5px;
+		border:none;
+		margin-bottom:15px;
+		outline: none;
+		background: white;
+		font-family: ubuntu;
+		font-size: 15px;
+		font-weight: bold;
+		border:2px solid #34495e;
+		box-shadow: 0px 0px 0px 1pt white;
+		}		
+		.button{
+		width: 360px;
+		height: 45px;
+		background:#34495e;
+		border-radius: 5px;
+		text-align:center;
+		color: white;
+		border: none;
+		font-family: ubuntu;
+		font-weight: bold;
+		font-size: 17px;
+		cursor:pointer;
+		border:1px solid white;
+		}
