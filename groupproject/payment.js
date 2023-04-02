@@ -60,6 +60,4 @@ function closePopup(event) {
 }
 function submitted() {
     // alert("Payment Successfull");
-  ;
-    
-  }
+}

@@ -175,7 +175,6 @@ li a{
     /* border: 1px solid green; */
     margin-top: 10px;
     /* height: 453px; */
-    width:100%
 }
 .vid video{
     height: 453px;
@@ -186,16 +185,12 @@ li a{
     /* border: 1px solid red; */
     background-color: rgb(255, 255, 255);
     margin-top: 30px;
-    margin:auto;
-    align-items: center;
 }
 .seventh div
 {
     display: flex;
     /* margin-top: auto; */
     margin-top: 40px;
-    margin:auto;
-    align-items: center;
 }
 .seventh div img
 {
@@ -213,22 +208,18 @@ li a{
     /* border: 1px solid red; */
     background-color: rgb(255, 255, 255);
     margin-top: 40px;
-    margin:auto;
-    align-items: center;
 }
 .eight div
 {
     display: flex;
     /* margin-top: auto; */
     margin-top: 40px;
-    margin:auto;
-    align-items: center;
 }
-.eight div a img
+.eight div img
 {
     /* display: flex; */
     height: 400px;
-    width: 600px;
+    width: 500px;
     /* margin: auto; */
     margin-left: 45px;
     margin-top: 15px;
@@ -239,28 +230,23 @@ li a{
     /* border: 1px solid red; */
     background-color: rgb(255, 255, 255);
     margin-top: 40px;
-    margin:auto;
-    align-items: center;
 }
 .nineth div
 {
     display: flex;
     /* margin-top: auto; */
     margin-top: 40px;
-    margin:auto;
-    align-items: center;
 }
-.nineth div a img
+.nineth div img
 {
     /* display: flex; */
     height: 400px;
-    width: 600px;
+    width: 500px;
     /* margin: auto; */
     margin-left: 45px;
     margin-top: 15px;
 
 }
-
 .tenth
 {
     background-color: rgb(247, 247, 247);
@@ -517,5 +503,5 @@ img:hover
     {
         height: 100%;
         width: 100%;
-    }
-} */
+    }
+} */
