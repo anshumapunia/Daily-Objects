@@ -30,7 +30,12 @@ async function login(){
               let data = await response.json()
               console.log(data);
               localStorage.setItem("auth",JSON.stringify(data.token)); 
-              redirect()
+              setTimeout(() => {
+                console.log(userAuth);
+                // if(userAuth!==null){
+                window.location = dashboard 
+            // }
+            }, 2000);
             //   console.log(userAuth);
         }        
     } catch (e) {
@@ -38,11 +43,8 @@ async function login(){
     }
 }
 
-function redirect(){
-    console.log("redirect")
-    console.log(userAuth);
-    if(userAuth!=null){
-        window.location = dashboard
-    }
+function redirect(){       
+        
+   
 }
 
