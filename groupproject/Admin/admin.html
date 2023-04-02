@@ -33,13 +33,13 @@
                 <li type="message">
                     <a href="#">
                         <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
-                        <span class="title">Messages</span>
+                        <span class="title">Orders</span>
                     </a>
                 </li>
                 <li type="help">
                     <a href="#">
                         <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
-                        <span class="title">Help</span>
+                        <span class="title">Manage Products</span>
                     </a>
                 </li>
                 <li>
@@ -63,8 +63,7 @@
             </ul>
         </div>
          <!-- ================ Main Section ================ -->
-
-         <div class="main">
+         <div class="main" id="main">
             <div class="topbar">
                 <div class="toggle">
                     <ion-icon name="menu-outline"></ion-icon>
@@ -72,7 +71,7 @@
                  
                 <div class="search">
                     <label >
-                        <input type="text" placeholder="Search here">
+                        <input type="text" placeholder="Search here" id="search">
                         <ion-icon name="search-outline"></ion-icon>
                     </label>
                 </div>
@@ -115,7 +114,7 @@
 
                     <div class="card">
                         <div>
-                             <div class="numbers">$1230</div>
+                             <div class="numbers">$12530</div>
                              <div class="cardName">Earnings</div>
                         </div>
                         <div class="iconBx">
@@ -174,16 +173,22 @@
                     </div>
                  </div>
 
-                 <!-- ================ Order Details Section ================ -->
+                 <!-- ================ Customer Details Section ================ -->
+                 <div class="details">
                  <div class="customers">
+                    <div class="cardHeaders">
+                        <h2>All Customers</h2>
+                        <!-- <a href="#" class="btn">View All</a> -->
+                    </div>
                     <center>
                         <table>
                             <thead>
                                 <tr>
-                                    <th>Id</th>
-                                    <th>Name</th>
-                                    <th>Phone No</th>
-                                    <th>Email</th>
+                                    <td>Id</td>
+                                    <td>Name</td>
+                                    <td>Phone No</td>
+                                    <td>Email</td>
+                                    <td>State</td>
                                   </tr>
                             </thead>
                             <tbody>
@@ -193,17 +198,184 @@
                     </center>
                   
                  </div>
+                </div>
 
+                <!-- ================ Orders Details Section ================ -->
+                <div class="details">
+                    <div class="allOrders">
+                            <div class="cardHeaders">
+                                <h2>Recent Orders</h2>
+                                <a href="#" class="btn">View All</a>
+                            </div>
+    
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Name</td>
+                                        <td>Price</td>
+                                        <td>Payment</td>
+                                        <td>Status</td>
+                                    </tr>
+                                </thead>
+    
+                                <tbody>
+                                    <tr>
+                                        <td>Star Refrigerator</td>
+                                        <td>$1200</td>
+                                        <td>Paid</td>
+                                        <td><span class="status delivered">Delivered</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Desktop Mat</td>
+                                        <td>$130</td>
+                                        <td>Due</td>
+                                        <td><span class="status pending">Pending</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Laptop Sleeves</td>
+                                        <td>$500</td>
+                                        <td>Paid</td>
+                                        <td><span class="status return">Return</span></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>Air tags</td>
+                                        <td>$20</td>
+                                        <td>In Progress</td>
+                                        <td><span class="status inProgress">In Progress</span></td>
+                                    </tr>
 
-                   <!-- ================ Sign Out Section ================ -->
-                   <center>
-                    <div class="signOut">
-                        <div class="out">
-                            <h1>Are you Sure You Want To Sign Out!</h1>
-                            <button id="signOut">Sign Me Out</button>
+                                    <tr>
+                                        <td>Eye Case</td>
+                                        <td>$89</td>
+                                        <td>Paid</td>
+                                        <td><span class="status delivered">Delivered</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Pace Blue Planner</td>
+                                        <td>$89</td>
+                                        <td>Paid</td>
+                                        <td><span class="status delivered">Delivered</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Laptop Sleeves</td>
+                                        <td>$359</td>
+                                        <td>Return</td>
+                                        <td><span class="status return">Return</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                </div>
+
+                <!-- ================ Manage Procucts Section ================ -->
+                
+                <div class="details">
+                    <div class="manageProducts" id="manageProducts"> 
+                        <div id="returnUp">
+                            <a  href="#main"> Return Up</a>
+                        </div> 
+                        <div id="returnUp2">
+                            <a  href="#main"> Return Up</a>
+                        </div> 
+                        <div id="returnUp3">
+                            <a  href="#main"> Return Up</a>
+                        </div> 
+                    <a href="#listP">
+                        <div class="list">
+                            <div>
+                                <span class="icon"><ion-icon name="list-outline"></ion-icon></span>
+                                <h2 id="list">Product List</h2>
+                            </div>
                         </div>
-                     </div>
-                   </center>
+                    </a>
+
+                    <a href="#add">
+                        <div class="addProducts">  
+                            <div>
+                                <span class="icon"> <ion-icon name="add-outline"></ion-icon></span>
+                                <h2>Add New Products</h2>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="manageQ">
+                            <div>
+                                <span class="icon">  <ion-icon name="layers-outline"></ion-icon></span>
+                                <h2>Manage Quanties</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#edit">
+                        <div class="editProducts">
+                            <div>
+                                <span class="icon"><ion-icon name="create-outline"></ion-icon></span>
+                                <h2>Edit Product Details</h2>
+                            </div>
+                        </div>
+                    </a>    
+                    </div>
+
+                    <div id="add">
+                        <div><h1>Add Product Here</h1>
+                            <input type="text" id="image" placeholder="Image link">
+                            <input type="text" placeholder="name" id="name">
+                            <input type="number" placeholder="category"id="category">
+                            <input type="number" placeholder="price" id="price">
+                            <input type="text" placeholder="description" id="description">
+                            <button onclick="addProduct()">Create</button>
+                        </div>
+                    </div>
+
+                    <div id="edit">
+                        <div><h1>Edit Product Details Here</h1>
+                            <input type="text" placeholder="Product Id" id="update-id">
+                            <input type="text" id="eimage" placeholder="Image link">
+                            <input type="text" placeholder="name" id="ename">
+                            <input type="number" placeholder="category"id="ecategory">
+                            <input type="number" placeholder="price" id="eprice">
+                            <input type="text" placeholder="description" id="edescription">
+                            <button onclick="updateData()">Update Data</button>
+                        </div>
+                    </div>
+
+                    <div class="allProducts" id="listP">
+                        <div class="cardHeaders">
+                            <h2>All Products</h2>
+                            <!-- <a href="#" class="btn">View All</a> -->
+                        </div>
+
+                        <table >
+                            <thead>
+                                <tr>
+                                    <td>Id</td>
+                                    <td>Name</td>
+                                    <td>Price</td>
+                                    <td>Quantity</td>
+                                    <td>Delete</td>
+                                </tr>
+                            </thead>
+                            <tbody id="pdata">
+                               
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                    <div id="pagination"></div>
+                </div>
+                
+                <!-- ================ Sign Out Section ================ -->
+                <center>
+                 <div class="signOut">
+                    <div class="out">
+                        <h1>Are you Sure You Want To Sign Out!</h1>
+                        <button id="signOut">Sign Me Out</button>
+                    </div>
+                    </div>
+                </center>
                
 
 
@@ -215,4 +387,5 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 <script src="admin.js"></script>
+<script src="sweetalert.js"></script>
 </html>

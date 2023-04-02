@@ -56,9 +56,9 @@ li a{
     display: flex;
     display: none;
     position:absolute;
-    background-color:white;
-    gap: 5px; 
-    left: 0;
+    background-color: rgb(232, 232, 232);
+    gap: 5px;
+    left: 0; 
 }
 .submenu >div>h3
 {
@@ -68,9 +68,7 @@ li a{
 .submenu >div>p
 {
     padding-left: 15px;
-
 }
-
 .ul1 :hover .submenu
 {
     display: block;
@@ -83,15 +81,10 @@ li a{
 {
     position: relative;
 }
-/* .ul1 >li>a>div
-{
-    align-content: center;
-} */
 .img1
 {
     display: flex;
     background-color: white;
-  
     
 }
 .img1>div
@@ -101,8 +94,8 @@ li a{
 }
 .img1>div>img
 {
-    height: 300px;
-    width:250px;
+    height: 200px;
+    width:150px;
     margin: 10px;
 }
 .img2
@@ -114,7 +107,7 @@ li a{
 .img2 >img
 {
     height: 450px;
-    width: 400px;
+    width: 300px;
     
 }
 .img3
@@ -124,8 +117,8 @@ li a{
 }
 .img3 >img
 {
-  height: 300px;
-  width: 250px;  
+  height: 200px;
+  width: 200px;  
 }
 .img4
 {
@@ -133,8 +126,8 @@ li a{
 }
 .img4 >img
 {
-  height: 300px;
-  width: 250px;  
+  height: 200px;
+  width: 200px;  
 }
 .img5
 {
@@ -144,8 +137,8 @@ li a{
 }
 .img5 >img
 {
-  height: 350px;
-  width: 450px;
+  height: 200px;
+  width: 300px;
   /* padding-left: 10px; */
 }
 .img6
@@ -155,7 +148,7 @@ li a{
 }
 .img6 >img
 {
-  height: 300px;
+  height: 200px;
   width: 350px;
   /* padding-left: 10px; */
 }
@@ -166,7 +159,7 @@ li a{
 }
 .img7 >img
 {
-  height: 300px;
+  height: 200px;
   width: 350px;
   /* padding-left: 10px; */
 }
@@ -175,7 +168,6 @@ li a{
     /* border: 1px solid green; */
     margin-top: 10px;
     /* height: 453px; */
-    width:100%
 }
 .vid video{
     height: 453px;
@@ -186,16 +178,12 @@ li a{
     /* border: 1px solid red; */
     background-color: rgb(255, 255, 255);
     margin-top: 30px;
-    margin:auto;
-    align-items: center;
 }
 .seventh div
 {
     display: flex;
     /* margin-top: auto; */
     margin-top: 40px;
-    margin:auto;
-    align-items: center;
 }
 .seventh div img
 {
@@ -213,22 +201,18 @@ li a{
     /* border: 1px solid red; */
     background-color: rgb(255, 255, 255);
     margin-top: 40px;
-    margin:auto;
-    align-items: center;
 }
 .eight div
 {
     display: flex;
     /* margin-top: auto; */
     margin-top: 40px;
-    margin:auto;
-    align-items: center;
 }
-.eight div a img
+.eight div img
 {
     /* display: flex; */
     height: 400px;
-    width: 600px;
+    width: 500px;
     /* margin: auto; */
     margin-left: 45px;
     margin-top: 15px;
@@ -239,28 +223,23 @@ li a{
     /* border: 1px solid red; */
     background-color: rgb(255, 255, 255);
     margin-top: 40px;
-    margin:auto;
-    align-items: center;
 }
 .nineth div
 {
     display: flex;
     /* margin-top: auto; */
     margin-top: 40px;
-    margin:auto;
-    align-items: center;
 }
-.nineth div a img
+.nineth div img
 {
     /* display: flex; */
     height: 400px;
-    width: 600px;
+    width: 500px;
     /* margin: auto; */
     margin-left: 45px;
     margin-top: 15px;
 
 }
-
 .tenth
 {
     background-color: rgb(247, 247, 247);
@@ -509,7 +488,55 @@ img:hover
     padding-left: 35px;
 
 }
+#New h2{
+    text-align: center;
+}
+#New>div{
+    display: flex;
+    justify-content: space-evenly;
+    
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+#New>div>div{
+    width: 6%;
 
+
+    
+}
+#New>div>div>img{
+    border-radius: 75px;
+}
+#New p{
+    color: grey;
+}
+
+#products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+#products >div >h3{
+    text-transform: uppercase;
+}
+
+#products > div> img{
+
+    height: 290px;
+
+}
+#products > div{
+   
+    text-align: center;
+   
+    }
+
+    #products button{
+        margin-top: -2   px;
+    }
 
 /* @media screen and (min-width: 320px) and (max-width: 499px)
 {

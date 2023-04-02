@@ -1,21 +1,29 @@
+
+let dataArr = []
 function localData(e){
     e.preventDefault();
-
-    let userdata={
-        nameInput : document.getElementById('name').value,
-        emailInput : document.querySelector('#email').value,
-        addressInput : document.querySelector('#address').value,
-        cityInput : document.querySelector('#city').value,
-        stateInput : document.querySelector('#state').value,
-        zipInput : document.querySelector('#code').value,
-        cardNameInput : document.querySelector('#cardname').value,
-        cardNumberInput : document.querySelector('#cardno').value,
-        expMonthInput : document.querySelector('#exp').value,
-        expYearInput : document.querySelector('#expyear').value,
-        cvvInput : document.querySelector('#cvv').value
+    let randomid = function(length = 5){
+        return Math.floor(Math.random() * 1000)
+    }
+    let phoneNum =  Math.floor(100000000 + Math.random() * 900000000);
+    console.log(randomid());
+    let obj={
+        id: randomid(),
+        name : document.getElementById('name').value,
+        email: document.querySelector('#email').value,
+        phone: phoneNum,
+        address : document.querySelector('#address').value,
+        city : document.querySelector('#city').value,
+        state: document.querySelector('#state').value,
+        zip: document.querySelector('#code').value,
+        cardName: document.querySelector('#cardname').value,
+        cardNumber : document.querySelector('#cardno').value,
+        expMonth : document.querySelector('#exp').value,
+        expYear : document.querySelector('#expyear').value,
+        cvv : document.querySelector('#cvv').value
     };
-
-    localStorage.setItem("Data-user", JSON.stringify(userdata));
+    userData.push(obj)
+    localStorage.setItem("Data-user", JSON.stringify(userData));
 }
 
 
@@ -29,23 +37,7 @@ submitBtn.addEventListener('click', function(event) {
 });
 
 
-let userData = JSON.parse(localStorage.getItem("Data-user"));
-
-if (userData) {
-    let name = userData.nameInput;
-    let email = userData.emailInput;
-    let address = userData.addressInput;
-    let city = userData.cityInput;
-    let state = userData.stateInput;
-    let code = userData.zipInput;
-    let cardName = userData.cardNameInput;
-    let cardNumber = userData.cardNumberInput;
-    let expMonth = userData.expMonthInput;
-    let expYear = userData.expYearInput;
-    let cvv = userData.cvvInput;
-}
-
-
+let userData = JSON.parse(localStorage.getItem("Data-user")) || [];
 
 function openPopup(event) {
     // event.preventDefault();

@@ -13,6 +13,7 @@
     --gray: #f5f5f5;
     --black1: #222;
     --black2: #999;
+    --lightblue: #527190;
 }
 
 body{
@@ -370,47 +371,439 @@ body{
 
 /* // ============= Customer Page ============= */
 
-.customers{
-   position: relative;
-   top: 120px;
+.details {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1 fr;
+    grid-gap: 30px;
+    /* margin-top: 10px; */
 }
-/* .customers table tr th{
+.details .customers{
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
 
-} */
-.customers table{
+.details .cardHeaders{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cardHeaders h2{
+    font-weight: 600;
+    color: var(--blue);
+}
+.cardHeaders .btn {
+    position: relative;
+    padding: 5px 10px;
+    background: var(--blue);
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 6px;
+}
+
+.details table{
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px; 
 }
-.customers table thead td{
+.details table thead td{
     font-weight: 600;
 }
-.customers table tr{
+.details .customers table tr{
     color: var(--black1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.customers table tr:last-child{
+.details .customers table tr:last-child{
     border-bottom: none;
 }
 
-.customers table tbody tr:hover{
+.details .customers table tbody tr:hover{
     background:  var(--blue);
     color: var(--white);
 }
 
-.customers table tr td{
+.details .customers table tr td{
     padding: 10px;
 }
 
-.customers table tr td:last-child{
+.details .customers table tr td:last-child{
     text-align: end;
 }
-.customers table tr td:nth-child(2){
+.details .customers table tr td:nth-child(2){
     text-align: end;
 }
-.customers table tr td:nth-child(3){
+.details .customers table tr td:nth-child(3){
     text-align: center;
 }
+.details .customers table tr td:nth-child(4){
+    text-align: start;
+}
+
+
+
+
+/* allOrders */
+/* // ============= All Orders Page ============= */
+
+.details {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1 fr;
+    grid-gap: 30px;
+    /* margin-top: 10px; */
+}
+.details .allOrders{
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+.details table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px; 
+}
+.details table thead td{
+    font-weight: 600;
+}
+.details .allOrders table tr{
+    color: var(--black1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.details .allOrders table tr:last-child{
+    border-bottom: none;
+}
+
+.details .allOrders table tbody tr:hover{
+    background:  var(--blue);
+    color: var(--white);
+}
+
+.details .allOrders table tr td{
+    padding: 10px;
+}
+
+.details .allOrders table tr td:last-child{
+    text-align: end;
+}
+.details .allOrders table tr td:nth-child(2){
+    text-align: end;
+}
+.details .allOrders table tr td:nth-child(3){
+    text-align: end;
+}
+.details .allOrders table tr td:nth-child(4){
+    text-align: center;
+}
+
+
+/* <!-- ================ Manage Procucts Section ================ --> */
+.manageProducts{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    width: 90%;
+    min-height: 500px;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 20px;
+    margin: auto;
+    color: var(--white);
+}
+.manageProducts a{
+    text-decoration: none;
+    /* margin-top: 80px; */
+}
+.manageProducts>a>div{
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    background: var(--white);
+    color: var(--lightblue);
+    /* border-color: wheat; */
+    min-height: 200px;
+    text-align: center;
+    border-radius: 20px;
+}
+.manageProducts>a>div:hover{
+    background: var(--lightblue);
+    color: var(--white);
+    cursor: pointer;
+}
+.manageProducts>a>div .icon ion-icon{
+    margin-top: 60px;
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+/* add products */
+
+#add{
+    margin-top: 340px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 310px;
+    min-width: 1000px;
+}
+#add h1{
+    margin: 20px 10px 40px 10px;
+}
+#add div{
+    background-image: linear-gradient(to right, rgba(255,255,255, 0.7) 0 100%),url("https://imgs.search.brave.com/9GORGmDVc1xCDOkpmviYzNPobA2lQIe3tB6wUiNGKrs/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC51/ckU0LV82UjgzNUVI/bC1IX1dVdDhnSGFF/SyZwaWQ9QXBp");
+    background-size: cover;
+    
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    margin: auto;
+    width: 30%;
+    padding: 20px;
+} 
+#add div input{
+    
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 35px;
+    padding: 10px;
+    margin: 20px 10px 20px 10px;
+    border: none;
+    border-bottom: solid 1px black;
+}
+#add div button{
+    padding: 10px;
+    width: 140px;
+    color: var(--blue);
+    font-weight: bolder;
+    font-size: 14px;
+    border: none;
+}
+#add div button:hover{
+    background-color: var(--lightblue);
+    color: var(--white);
+}
+#returnUp{
+    position: absolute;
+    top: 1000px;
+    right: 0;
+    z-index: 100000;
+    overflow: hidden;
+    /* top: 100px; */
+    /* left: 0px; */
+    /* margin-left: 1500px; */
+    background:none;
+    background-color: var(--blue);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 20px;
+    width:130px ;
+}
+#returnUp a{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bolder;   
+}
+
+/* edit products */
+#edit{
+    margin-top: 340px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 310px;
+    min-height: 1000px;
+}
+#edit h1{
+    margin: 20px 10px 40px 10px;
+}
+#edit div{
+    background-image: linear-gradient(to right, rgba(255,255,255, 0.7) 0 100%),url("https://imgs.search.brave.com/9GORGmDVc1xCDOkpmviYzNPobA2lQIe3tB6wUiNGKrs/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC51/ckU0LV82UjgzNUVI/bC1IX1dVdDhnSGFF/SyZwaWQ9QXBp");
+    background-size: cover;
+    
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    margin: auto;
+    width: 35%;
+    padding: 20px;
+} 
+#edit div input{
+    
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 35px;
+    padding: 10px;
+    margin: 20px 10px 20px 10px;
+    border: none;
+    border-bottom: solid 1px black;
+}
+#edit div button{
+    padding: 10px;
+    width: 140px;
+    color: var(--blue);
+    font-weight: bolder;
+    font-size: 14px;
+    border: none;
+}
+#edit div button:hover{
+    background-color: var(--lightblue);
+    color: var(--white);
+}
+#returnUp2{
+    position: absolute;
+    top: 2100px;
+    right: 0;
+    z-index: 100000;
+    overflow: hidden;
+    /* top: 100px; */
+    /* left: 0px; */
+    /* margin-left: 1500px; */
+    background:none;
+    background-color: var(--blue);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 20px;
+    width:130px ;
+}
+#returnUp2 a{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bolder;   
+}
+
+
+
+/* <!-- ================ Product List Section ================ --> */
+.details .allProducts{
+    position: relative;
+    display: grid;
+    min-height: 600px;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+.details .cardHeaders{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cardHeaders h2{
+    font-weight: 600;
+    color: var(--blue);
+}
+.cardHeaders .btn {
+    position: relative;
+    padding: 5px 10px;
+    background: var(--blue);
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 6px;
+}
+
+.details table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px; 
+}
+.details table thead td{
+    font-weight: 600;
+}
+.details .allProducts table tr{
+    color: var(--black1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.details .allProducts table tr:last-child{
+    border-bottom: none;
+}
+
+.details .allProducts table tbody tr:hover{
+    background:  var(--black1);
+    color: var(--white);
+}
+.details .allProducts table tbody tr:hover button{
+    background:  var(--black1);
+    color: var(--white);
+}
+
+.details .allProducts table tr td{
+    padding: 10px;
+}
+
+.details .allProducts table tr td:last-child{
+    text-align: start;
+}
+.details .allProducts table tr td:nth-child(2){
+    text-align: end;
+}
+.details .allProducts table tr td:nth-child(3){
+    text-align: center;
+}
+.details .allProducts table tr td:nth-child(4){
+    text-align: start;
+}
+.details .allProducts table tbody button{
+    text-align: center;
+    justify-content: end;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--black1);
+    color: var(--white);
+    border: solid 1px var(--white);
+    margin-top: 5px;
+    /* margin-left: 20px; */
+}
+.details .allProducts table tbody tr:hover button:hover{
+    background-color: #f00;
+    transition: 0.5s;
+}
+
+#pagination{
+    margin-left: 30px;
+    margin-bottom: 150px;
+}
+#pagination button{
+    margin: 10px;padding: 10px;
+    background-color: var(--black1);
+    color: var(--white);
+}
+#pagination button:hover{
+    background-color: var(--white);
+    color: var(--black1);
+    border: solid 2px var(--black1);
+}
+#returnUp3{
+    position: absolute;
+    top: 3100px;
+    right: 0;
+    z-index: 100000;
+    overflow: hidden;
+    /* top: 100px; */
+    /* left: 0px; */
+    /* margin-left: 1500px; */
+    background:none;
+    background-color: var(--blue);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 20px;
+    width:130px ;
+}
+#returnUp3 a{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bolder;   
+}
+
 
 
 
@@ -423,7 +816,7 @@ body{
     text-align: center;
     width: 100%;
     border-collapse: collapse;
-    margin-top: 160px; 
+    margin-top: 140px; 
     min-height: 500px;
     background: var(--white);
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);

@@ -5,8 +5,1299 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .first
+{
+    /* border: 2px solid red; */
+    /* height: 50px; */
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    /* box-sizing: border-box; */
+
+}
+.second >img
+{
+    height:30px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+
+.ul1 li
+{
+    display: inline-block;
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 20px;
+    font-size: 12px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+.ul1 li a:hover
+{
+  color: rgb(32, 168, 126);
+
+}
+.fourth img
+{
+    height:30px;
+    width: 35px;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+.fifth img
+{
+    height: 41px;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+.sixth img{
+    height: 20px;
+    margin-top: 15px;
+    margin-left: 10px    ;
+}
+.submenu
+{
+    display: flex;
+    display: none;
+    position:absolute;
+    background-color:white;
+    gap: 5px; 
+}
+.submenu >div>h3
+{
+ padding-left: 15px;
+ 
+}
+.submenu >div>p
+{
+    padding-left: 15px;
+}
+.ul1 :hover .submenu
+{
+    display: block;
+    display: flex;
+    font-size: 12px;
+    /* width: 500px; */
+
+}
+.ul1
+{
+    position: relative;
+}
+.img1
+{
+    display: flex;
+    background-color: white;
+    
+}
+.img1>div
+{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.img1>div>img
+{
+    height: 200px;
+    width:150px;
+    margin: 10px;
+}
+.img2
+{
+    margin: auto;
+    margin-left: 10px;
+}
+
+.img2 >img
+{
+    height: 450px;
+    width: 300px;
+    
+}
+.img3
+{
+    margin: auto;
+    margin-left: 4px;
+}
+.img3 >img
+{
+  height: 200px;
+  width: 200px;  
+}
+.img4
+{
+    margin: auto;
+}
+.img4 >img
+{
+  height: 200px;
+  width: 200px;  
+}
+.img5
+{
+    margin: auto;
+    /* margin-left: 3px; */
+    /* padding-left: 10px; */
+}
+.img5 >img
+{
+  height: 200px;
+  width: 300px;
+  /* padding-left: 10px; */
+}
+.img6
+{
+    margin: auto;
+    margin-left: 5px;
+}
+.img6 >img
+{
+  height: 200px;
+  width: 350px;
+  /* padding-left: 10px; */
+}
+.img7
+{
+    margin: auto;
+    margin-left: 5px;
+}
+.img7 >img
+{
+  height: 200px;
+  width: 350px;
+  /* padding-left: 10px; */
+}
+.vid
+{
+    /* border: 1px solid green; */
+    margin-top: 10px;
+    /* height: 453px; */
+}
+.vid video{
+    height: 453px;
+    width: 100%;
+}
+.seventh
+{
+    /* border: 1px solid red; */
+    background-color: rgb(255, 255, 255);
+    margin-top: 30px;
+}
+.seventh div
+{
+    display: flex;
+    /* margin-top: auto; */
+    margin-top: 40px;
+}
+.seventh div img
+{
+    /* display: flex; */
+    height: 400px;
+    width: 500px;
+    /* margin: auto; */
+    margin-left: 45px;
+    margin-top: 15px;
+
+}
+
+.eight
+{
+    /* border: 1px solid red; */
+    background-color: rgb(255, 255, 255);
+    margin-top: 40px;
+}
+.eight div
+{
+    display: flex;
+    /* margin-top: auto; */
+    margin-top: 40px;
+}
+.eight div img
+{
+    /* display: flex; */
+    height: 400px;
+    width: 500px;
+    /* margin: auto; */
+    margin-left: 45px;
+    margin-top: 15px;
+
+}
+.nineth
+{
+    /* border: 1px solid red; */
+    background-color: rgb(255, 255, 255);
+    margin-top: 40px;
+}
+.nineth div
+{
+    display: flex;
+    /* margin-top: auto; */
+    margin-top: 40px;
+}
+.nineth div img
+{
+    /* display: flex; */
+    height: 400px;
+    width: 500px;
+    /* margin: auto; */
+    margin-left: 45px;
+    margin-top: 15px;
+
+}
+.tenth
+{
+    background-color: rgb(247, 247, 247);
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    /* display: flex; */
+    /* width: 1000px; */
+}
+.daily h2
+{
+    text-align: center;
+}
+.slider
+{
+        height: 250px;
+        margin: auto;
+        position: relative;
+        width: 1000px;
+        display: grid;
+        overflow: hidden;
+        place-items: center;
+}
+ .slide-track
+ {
+        display: flex;
+        width: calc(250px*18);
+        animation: scroll 40s linear infinite; 
+ }
+ @keyframes scroll
+{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(calc(-250px*9));
+        }
+
+}
+.slide{
+        height: 200px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        perspective: 100px;
+    }
+img
+{
+        width: 100%;
+        transition: transform 1s;
+
+}
+img:hover
+{
+        transform: translateZ(20px);
+}
+.slider::before,
+.slider::after{
+        background: linear-gradient(to right,rgba(255,255,255,0) 100%);
+        content: '';
+        height: 100%;
+        position:absolute;
+        width: 15%;
+        z-index: 2;
+}
+.slider::before
+{
+        left: 0;
+        top: 0;
+        transform: rotateZ(90deg);
+}
+.slider::after
+{
+       right: 0;
+       top: 0;
+       transform: rotateZ(90deg);
+}
+/* .get
+{
+        /* border: 1px solid red; */
+/* }  */
+.acces h3
+{
+         text-align: center;
+}
+.searchbar
+{
+   margin-top: 30px;
+   margin-left: 400px;
+
+   display: flex;
+   /* color: rgb(124, 135, 142); */
+   /* border: 1px solid green; */
+}
+.searchbar input
+{
+    height: 45px;
+    width: 300px;
+    font-size: larger;
+}
+.searchbar button
+{
+    height: 45px;
+    margin-bottom: 20px;
+    background-color: rgb(191, 191, 191);
+
+}
+.feat
+{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+/* .hone
+{
+    border: 1px solid red;
+} */
+.set h3
+{
+  text-align: center;
+}
+.quick
+{
+    /* border: 1px solid red; */
+    display: flex;
+    /* margin: auto; */
+    /* justify-content: center; */
+    justify-content: space-evenly;
+}
+.del
+{
+    display: flex;
+    gap: 10px;
+    
+}
+.del img
+{
+  height: 40px;
+  /* justify-content: left; */
+  margin-top: 8px;
+}
+.final
+{
+    /* border: 1px solid red; */
+    display: flex;
+    
+}
+.us 
+{
+    display: flex;
+    gap: 60px;
+}
+.wow
+{
+    margin-left: 10px;
+}
+.on
+{
+ display: flex;
+ gap: 30px;
+ margin-left: 10px;
+}
+.on div img
+{
+    height: 35px;
+}
+.down
+{
+ margin-left: 10px;
+}
+.app
+{
+    display: flex;
+    gap: 15px;
+    margin-left: 10px;
+}
+.main
+{
+    /* justify-content: space-evenly; */
+    margin-left: 200px;
+}
+/* .ment
+{
+    border: 1px solid red ;
+} */
+.sec
+{
+  text-align: center;
+}
+.pay
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.pay div img
+{
+    /* size: 40p; */
+    /* justify-content: space-between; */
+    height: 40px;
+    /* justify-content: space-evenly; */
+}
+.most
+{
+    text-align: center;
+}
+.iphone
+{
+    display: flex;
+    gap: 40px ;
+    font-size: small;
+    margin-left: 60px;
+}
+/* .mini
+{
+    border: 1px solid red;
+} */
+.case
+{
+    margin-left: 60px;
+}
+.iphone1
+{
+    display: flex;
+    gap: 100px ;
+    font-size: small;
+    margin-left: 60px;
+}
+/* .log{
+    
+    border: 1px solid red;
+} */
+.blog
+{
+    margin-left: 60px;
+}
+.whole
+{
+    background-color: black;
+    height: 100px;
+    width:1140px;
+}
+.sale
+{
+    color: white;
+    padding-top: 45px;
+    padding-left: 35px;
+
+}
+#New h2{
+    text-align: center;
+}
+#New>div{
+    display: flex;
+    justify-content: space-evenly;
+    
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+#New>div>div{
+    width: 6%;
+
+
+    
+}
+#New>div>div>img{
+    border-radius: 75px;
+}
+#New p{
+    color: grey;
+}
+
+#products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+#products >div >h3{
+    text-transform: uppercase;
+}
+
+#products > div> img{
+
+    height: 290px;
+
+}
+#products > div{
+   
+    text-align: center;
+   
+    }
+
+    #products button{
+        margin-top: -2   px;
+    }
+    #cart-container{
+        
+display: grid;
+grid-template-columns: repeat(3,1fr);
+margin: auto;
+gap: 20px;
+    }
+    #cart-container>div{
+        width: 200px;
+        margin: auto;
+
+    }
+   
+    #cart-container>div>button{
+        color: rgb(27, 24, 24);
+        background-color: rgb(29, 197, 244);
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+        border: none;
+
+    }
+    #total{
+        color: red;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    #cart-total{
+        color: black;
+    }
+    #acd{
+        color: rgb(27, 24, 24);
+        background-color: rgb(29, 197, 244);
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+        border: none;   
+    }
+
+    #acd>a{
+        text-decoration: none;
+    }
+
+/* @media screen and (min-width: 320px) and (max-width: 499px)
+{
+    .first
+    {
+        height: 100%;
+        width: 100%;
+    }
+} */
+
+    </style>
 </head>
 <body>
+    <!-- comment  -->
+    <hr>
+    <div class="first">
+        <div class="second"> 
+            <img src="https://images.dailyobjects.com/marche/icons/logo_named.png?tr=cm-pad_resize,v-2,w-135,h-27,dpr-1" alt="">
+        </div>
+        <div class="third">
+            <ul class="ul1">
+                <li>
+                    <a href="#">New Arrivals</a>
+                    <div class="submenu">
+                        <hr>
+                        <div>
+                            <h3>NEW ARRIVALS</h3>
+                            <p>Desks</p>
+                            <p>Charging Solutions</p>
+                            <p>Collections</p>
+                            <p>Mackbook Sleeves</p>
+                            <p>Messenger Bags</p>
+                            <p>Eyewear Cases</p>
+                            <p>WatchBands</p>
+                        </div>
+                        <div class="img1">
+                        <div>
+                            <img src="https://images.dailyobjects.com/marche/assets/images/other/recess-collection-dropdown-image-for-new-arrival.jpg?tr=cm-pad_crop,v-2?tr=cm-pad_resize,w-453,dpr-1" alt="">
+                        </div>
+                        <div>
+                            <img src="https://images.dailyobjects.com/marche/assets/images/other/planner-dropdown-image-for-new-arrival-2-new.jpg?tr=cm-pad_crop,v-2?tr=cm-pad_resize,w-453,dpr-1" alt="">
+                        </div>
+                        <div>
+                            <img src="https://images.dailyobjects.com/marche/assets/images/other/new-watch-chargers-dropdown-image-for-new-arrival-update.jpg?tr=cm-pad_crop,v-2?tr=cm-pad_resize,w-453,dpr-1" alt="">
+                        </div>
+                       </div>
+                       <hr>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Cases & Sleeves</a>
+                    <div class="submenu">
+                        <hr>
+                        <div>
+                            <h3>APPLES</h3>
+                            <p>iPhone13</p>
+                            <p>iPhone14</p>
+                            <p>iPhone14 pro..</p>
+                            <p>iPhone12</p>
+                            <p>iPhone11</p>
+                            <p>iPhoneXR</p>
+                            <p>iPhone12 Mini</p>
+                            <p>iPhone11 Pro..</p>
+                            <p>iPhoneX</p>
+                            <p>iPhoneXS</p>
+                        </div>
+                        <div>
+                            <h3>SAMSUNG</h3>
+                            <p>Galaxy S23 Ultra..</p>
+                            <p>Galaxy S23 Plus..</p>
+                            <p>Galaxy S23 New</p>
+                            <p>Galaxy Z Fold 4..</p>
+                            <p>Galaxy Z Flip 4..</p>
+                            <p>Galaxy S21</p>
+                            <p>Galaxy S21 FE</p>
+                            <p>Galaxy S22</p>
+                            <p>Galaxy A52</p>
+                            <p>Galaxy Note 10..</p>
+                        </div>
+                        <div>
+                            <h3>ONE PLUS</h3>
+                            <p>One Plus Nord...</p>
+                            <p>One Plus 10R</p>
+                            <p>One Plus Nord</p>
+                            <p>One Plus 9</p>
+                            <p>One Plus 8</p>
+                            <p>One Plus 7</p>
+                            <p>One Plus 9Pro</p>
+                            <p>One Plus 7T</p>
+                            <p>One Plus 7Pro</p>
+                            <p>One Plus Nord 2</p>
+                        </div>
+                        <div>
+                            <h3>OTHERS BRANDS</h3>
+                            <p>Nothing</p>
+                            <p>Xiaomi</p>
+                            <p>Oppo</p>
+                            <p>Google</p>
+                            <p>Motorola</p>
+                            <p>Vivo</p>
+                        </div>
+                        <div>
+                            <h3>IPAD</h3>
+                            <p>iPad Pro 11 2021</p>
+                            <p>i Pad Air 4</p>
+                            <p>iPad 9</p>
+                            <p>iPad 7</p>
+                            <p>iPad 8</p>
+                            <p>iPad Mini 6</p>
+                        </div>
+                        <hr> 
+                        <div>
+                            <h3>Laptop/MackBooks Sleeves</h3>
+                            <h3>AirPods Cases</h3>
+                            <h3>Messenger Bags</h3>
+                            <h3>Passport Covers</h3>
+                            <h3>Eyewear Cases</h3>
+                            <h3>Airtag Cases</h3>
+                        </div>
+                        <hr>
+                        <div class="img2">
+                            <img src="https://images.dailyobjects.com/marche/assets/images/other/airpods-cases-sleeves-page-dropdown-image.jpg?tr=cm-pad_crop,v-2,w-1000,w-192,h-661,dpr-1" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Accesories</a>
+                    <div class="submenu">
+                        <hr>
+                        <div>
+                            <h3>WATCH ACCESORIES</h3>
+                            <p>Apple Watchbands</p>
+                            <p>Apple Watch Chargers</p>
+                            <p>Universal Watchbands</p>
+                            <p>Apple Watch Cases</p>
+                            <p>Apple Watch Stands</p>
+
+                        </div>
+                        <div>
+                            <h3>SCREEN GUARD</h3>
+                            <p>For Mobile</p>
+                            <p>For Apple Watch</p>
+                            <p>For Mackbook</p>
+                            <p>For iPad</p>
+                        </div>
+                        <div>
+                            <h3>STANDS</h3>
+                            <p>For Apple Watch</p>
+                            <p>For Mobile</p>
+                            <p>For iPad</p>
+                            <p>For Laptop</p>
+                            <p>For Monitor</p>
+
+                        </div>
+                        <div>
+                            <h3>CHARGING SOLUTIONS</h3>
+                            <p>Wireless Chargers</p>
+                            <p>Chargers</p>
+                            <p>Apple Watch</p>
+                            <p>Charging Stations</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <h3>Orgainisers</h3>
+                            <h3>Phone Wallet</h3>
+                            <h3>KeyChain</h3>
+                            <h3>DrinkWare</h3>
+                            <h3>Masks</h3>
+                        </div>
+                        <hr>
+                        <div class="img3">
+                            <img src="https://images.dailyobjects.com/marche/assets/images/other/accessories-update-1.jpg?tr=cm-pad_crop,v-2,w-1000,w-98,h-380,dpr-1" alt="">
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <a href="#">Bags & Wallets</a>
+                    <div class="submenu">
+                        <hr>
+                        <div>
+                            <h3>WALLETS</h3>
+                            <p>Women's Wallets</p>
+                            <p>Card Wallets</p>
+                            <p>Mens Wallets</p>
+                            <p>Mobile Wallets</p>
+                            <p>Bi-Fold Wallets</p>
+                        </div>
+                        <div>
+                           <h3>CROSSBODY BAG</h3>
+                           <p>Pangea</p>
+                           <p>Retreat</p>
+                           <p>08:01</p>
+                           <p>Scout</p>
+                           <p>Box</p>
+                           <p>Arch</p>
+                           <p>Trapeze</p>
+                           <p>Tarp</p>
+                           <p>Orbis</p>
+                        </div>
+                        <div>
+                            <h3></h3>
+                            <p>TOTE BAG</p>
+                            <p>Pangea</p>
+                            <p>Tarp</p>
+                            <p>Buoyant</p>
+                            <p>Classic</p>
+                            <p>Fatty</p>
+                            <p>08:01</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <h3>Messenger Bags</h3>
+                            <h3>Back Packs</h3>
+                            <h3>Duffle Bags</h3>
+                            <h3>Pouches</h3>
+                        </div>
+                        <hr>
+                        <div class="img4">
+                            <img src="https://images.dailyobjects.com/marche/assets/images/other/bags-and-wallets-dropdown-update-4.jpg?tr=cm-pad_crop,v-2,w-1000,w-211,h-380,dpr-1" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Home Office</a>
+                    <div class="submenu">
+                        <hr>
+                        <div>
+                            <h3>STANDS</h3>
+                            <p>Watch</p>
+                            <p>Laptop</p>
+                            <p>Mobile</p>
+                            <p>iPad</p>
+                            <p>Monitor</p>
+                        </div>
+                        <div>
+                            <h3>ORGANISERS</h3>
+                            <p>Tech kit</p>
+                            <p>Cable Organiser</p>
+                            <p>Pouches</p>
+                            <p>Folio</p>
+                            <p>Planner</p>
+                        </div>
+                        <div>
+                            <h3>DESKS</h3>
+                            <p>Platform</p>
+                            <p>Desk Mat</p>
+                            <p>Mouse Pad</p>
+                            <p>Trays</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <h3>Statinary</h3>
+                            <h3>DrinkWare</h3>
+                            <h3>Charging Solution</h3>
+                        </div>
+                        <hr>
+                        <div class="img5">
+                            <img src="https://images.dailyobjects.com/marche/assets/images/other/home-office-update-stationary-dropdown-up.png?tr=cm-pad_resize,v-2,w-1000,w-208,h-380,dpr-1" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Collection</a>
+                    <div class="submenu">
+                        <div>
+                            <h3>COLLECTION</h3>
+                            <p>Pangea</p>
+                            <p>Love Pack</p>
+                            <p>Recess</p>
+                            <p>08:01</p>
+                            <p>Platform</p>
+                            <p>Trap</p>
+                            <p>Fleet</p>
+                        </div>
+                        <div>
+                            <h3>STUDIO</h3>
+                            <p>Tarot Collection</p>
+                            <p>DreamScape</p>
+                            <p>Mela</p>
+                            <p>ArcadePxl</p>
+                            <p>Zodiac</p>
+                            <p>Misfit</p>
+                            <p>Skateboard</p>
+                        </div>
+                        <div>
+                            <h3>COLLABARATION</h3>
+                            <p>DailyObjects</p>
+                        </div>
+                        <div class="img6">
+                            <img src="https://images.dailyobjects.com/marche/assets/images/other/new-collection-dropdown-desktop-update-3.jpg?tr=cm-pad_crop,v-2,w-1000,w-121,h-380,dpr-1" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Gifting</a>
+                    <div class="submenu">
+                        <div>
+                            <h3>CORPORATE GIFTING</h3>
+                            <p>Employee Kits</p>
+                            <p>Festive Kits</p>
+                        </div>
+                        <div>
+                            <h3>Holiday Gifting Bundles</h3>
+                            <h3>E-Gift Cards</h3>
+                        </div>
+                        <div>
+                            <h3>GIFTS BY BUDGET</h3>
+                            <p>Gifts Under 1000</p>
+                            <p>Gifts Under 2500</p>
+                            <p>Gifts Under 5000</p>
+                        </div>
+                        <div>
+                            <h3>GIFTS BY PERSONAS</h3>
+                            <p>Gifts for The Techie</p>
+                            <p>Gifts for the Organiser</p>
+                            <p>Gifts for the Workaholic</p>
+                            <p>Gifts for the Traveller</p>
+                        </div>
+                        <div class="img7">
+                            <img src="https://images.dailyobjects.com/marche/assets/images/other/gifting-page-drop-down-banner-1-update-up.png?tr=cm-pad_resize,v-2,w-1000,w-208,h-380,dpr-1" alt="">
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="fourth">
+            <img src="addtocart.jpg" alt="">
+        </div>
+        <div class="fifth">
+            <a href="login.html">
+            <img src="login logo.jpg" alt="">
+        </a>
+        </div>
+        <div class="sixth">
+            <img src="searchbar.jpg" alt="">
+        </div>
+    </div>
+    <hr>
+
+    <div class="offers">
+        <img src="https://images.dailyobjects.com/marche/assets/images/other/10-20-homepage-desktop.gif?tr=cm-pad_resize,v-2,dpr-1" alt="">
+
+    </div>
+    <h1 id="total">Your Total cart Price is:- <span id="cart-total">0</span></h1>
+    <button id="acd" ><a href="payment.html">Proceed to Pay</a></button>
+    <div id="cart-container">
+
+
+
+
+
+
+
+
+        
+    </div>
+    <div id="New">
+        <h2> NEW ARRIVALS</h2>
+        <div>
+        <div>
+            <img src="https://images.dailyobjects.com/marche/icons/new-arrival/all.png?tr=cm-pad_resize,v-2,w-70,h-70,dpr-1" alt="">
+            <p>All</p>
+        </div>
+        <div>
+            <img src="https://images.dailyobjects.com/marche/assets/images/other/filter-icon.jpg?tr=cm-pad_crop,v-2,w-70,h-70,dpr-1" alt="">
+            <p>Pedal Backpack</p>
+        </div>
+        <div>
+            <img src="https://images.dailyobjects.com/marche/icons/category/platrorm-desk-collection.png?tr=cm-pad_resize,v-2,w-70,h-70,dpr-1" alt="">
+            <p>Desks</p>
+        </div>
+        <div>
+            <img src="https://images.dailyobjects.com/marche/assets/images/other/charging-solution-icon.jpg?tr=cm-pad_crop,v-2,w-70,h-70,dpr-1" alt="">
+            <p>Charging Solutions</p>
+        </div>
+        <div>
+            <img src="https://images.dailyobjects.com/marche/icons/new-arrival/pu-snap-sleeves.jpg?tr=cm-pad_crop,v-2,w-70,h-70,dpr-1" alt="">
+            <p>Macbook Sleeves</p>
+        </div>
+        <div>
+            <img src="https://images.dailyobjects.com/marche/icons/category/laptop-brifcae-new-arrival-icon.jpg?tr=cm-pad_crop,v-2,w-70,h-70,dpr-1" alt="">
+            <p>Messenger Bags</p>
+        </div>
+        <div>
+            <img src="https://images.dailyobjects.com/marche/icons/filter/eyewear-cases.png?tr=cm-pad_resize,v-2,w-70,h-70,dpr-1" alt="">
+            <p>Eyewear Cases</p>
+        </div>
+        <div>
+            <img src="https://images.dailyobjects.com/marche/icons/category/watchbands-filter-icon-for-new-arrival.jpg?tr=cm-pad_crop,v-2,w-70,h-70,dpr-1" alt="">
+            <p>Watchbands</p>
+        </div>
+    </div>
+
+
+    </div>
+
+    <div id="products">
+    </div>
+
+
+    <div class="quick">
+        <div class="del">
+            <div>
+            <img src="https://images.dailyobjects.com/marche/icons/social/quick-delivery.svg?tr=cm-pad_resize,v-2,w-40,h-40,dpr-1" alt="">
+        </div>
+        <div>
+            <p>Quick Delivery</p>
+        </div>
+        </div>
+        <div class="del">
+            <div>
+            <img src="https://images.dailyobjects.com/marche/icons/social/easy-returns.svg?tr=cm-pad_resize,v-2,w-40,h-40,dpr-1" alt="">
+        </div>
+        <div>
+            <p>Easy Returns</p>
+        </div>
+        </div>
+        <div class="del">
+            <div>
+            <img src="https://images.dailyobjects.com/marche/icons/social/quality-assured.svg?tr=cm-pad_resize,v-2,w-40,h-40,dpr-1" alt="">
+        </div>
     
+        <div>
+            <p>Quality Assured</p>
+        </div>
+        </div>
+    </div>
+    <hr>
+    <div class="final">
+        <div class="us">
+        <div>
+            <h3>KNOW US</h3>
+            <p>About DailyObjects</p>
+            <p>Blog</p>
+        </div>
+    
+        <div>
+            <h3>HELP DESK</h3>
+            <p>Terms Of Use </p>
+            <p>Warranty Policy</p>
+            <p>Shipping Policy</p>
+            <p>Cancellation Policy</p>
+            <p>Return and Exchange Policy</p>
+            <p>Privecy & Security Policy</p>
+        </div>
+    
+    
+        <div>
+            <h3>NETWORK</h3>
+            <p>Contact Us</p>
+            <p>Corporate Gifting</p>
+        </div>
+    </div>
+    <div class="main">
+        <div class="wow">
+            <h3>FOLLOW ON US</h3>
+            <div class="on">
+                <div>
+                    <a href="https://www.instagram.com/dailyobjects_official/"><img src="https://images.dailyobjects.com/marche/icons/social/instagram.svg?tr=cm-pad_resize,v-2,w-36,h-36,dpr-1" alt=""></a>
+                    
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/DailyObjects"><img src="https://images.dailyobjects.com/marche/icons/social/facebook.svg?tr=cm-pad_resize,v-2,w-36,h-36,dpr-1" alt=""></a>
+                </div>
+                <div>
+                   <a href="https://www.youtube.com/channel/UC2gfsXOz3Nyn1vKyRpzlHhQ"><img src="https://images.dailyobjects.com/marche/icons/social/youtube.svg?tr=cm-pad_resize,v-2,w-36,h-36,dpr-1" alt=""></a> 
+                </div>
+                <div>
+                    <a href="https://twitter.com/Daily_Objects"><img src="https://images.dailyobjects.com/marche/icons/social/twitter.svg?tr=cm-pad_resize,v-2,w-36,h-36,dpr-1" alt=""></a>
+                </div>
+                <div>
+                    <a href="https://www.pinterest.com/dailyobjects/"><img src="https://images.dailyobjects.com/marche/icons/social/pinterest.svg?tr=cm-pad_resize,v-2,w-36,h-36,dpr-1" alt=""></a>
+                </div>
+            </div>
+    
+        </div>
+        <hr>
+        <div>
+            <div class="down">
+                <h2>DOWNLOAD OUR APP</h2>
+            </div>
+            <div class="app">
+                <div>
+                    <a href="https://play.google.com/store/apps/details?id=com.dailyobjects"><img src="https://images.dailyobjects.com/marche/icons/android.png?tr=cm-pad_resize,v-2,w-118,h-38,dpr-1" alt=""></a>
+                </div>
+                <div>
+                    <a href="https://apps.apple.com/us/app/dailyobjects/id1141900369"><img src="https://images.dailyobjects.com/marche/icons/IOS.png?tr=cm-pad_resize,v-2,w-118,h-38,dpr-1" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    </div>
+    <hr>
+    
+    <div class="ment">
+        <div class="sec">
+            <h3>100% SECURE PAYMENT</h3>
+        </div>
+        <div class="pay">
+            <div>
+            <a href="https://www.americanexpress.com/en-in/">
+                <img src="https://images.dailyobjects.com/marche/icons/payments/amex-update.png?tr=cm-pad_resize,v-2,dpr-1" alt="">
+            </a>
+            </div>
+            <div>
+            <a href="">
+                <img src="https://images.dailyobjects.com/marche/icons/payments/maestro-update.png?tr=cm-pad_resize,v-2,dpr-1" alt="">
+            </a>
+            </div>
+            <div>
+                <img src="https://images.dailyobjects.com/marche/icons/payments/mastercard-update.png?tr=cm-pad_resize,v-2,dpr-1" alt="">
+            </div>
+            <div>
+                <img src="https://images.dailyobjects.com/marche/icons/payments/mobikwik-update.png?tr=cm-pad_resize,v-2,dpr-1" alt="">
+            </div>
+            <div>
+            <a href="https://paytm.com/">
+                <img src="https://images.dailyobjects.com/marche/icons/payments/paytm-update.png?tr=cm-pad_resize,v-2,dpr-1" alt="">
+            </a>
+            </div>
+            <div>
+                <a href="https://www.rupay.co.in/">
+                <img src="https://images.dailyobjects.com/marche/icons/payments/rupay-update.png?tr=cm-pad_resize,v-2,dpr-1" alt="">
+            </a>
+            </div>
+            <div>
+                <img src="https://images.dailyobjects.com/marche/icons/payments/upi-update.png?tr=cm-pad_resize,v-2,dpr-1" alt="">
+            </div>
+            <div>
+             <a href="">
+                <img src="https://images.dailyobjects.com/marche/icons/payments/visa-update.png?tr=cm-pad_resize,v-2,dpr-1" alt="">
+          </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mini">
+        <div class="most">
+            <p>MOST SEARCHED ON DAILYOBJECTS</p>
+        </div>
+        <div>
+            <div class="case">
+              <h4>CASES & COVERS</h4>
+            </div> 
+            <div class="iphone">
+            <div>
+                <p>iPhone 13 Covers</p>
+                <p>iPhone 14 Covers</p>
+                <p>iPhone 11 Covers</p>
+                <p>iPhone 12 Covers</p>
+                <p>Oneplus Nord Covers</p>
+                <p>iPhone XS Max Covers</p>
+                <p>Oneplus Nord CE Covers</p>
+                <p>iPhone Covers</p>
+            </div>
+            
+            <div>
+                <p>iPhone 13 Covers</p>
+                <p>iPhone 14 Covers</p>
+                <p>iPhone 11 Covers</p>
+                <p>iPhone 12 Covers</p>
+                <p>Oneplus Nord Covers</p>
+                <p>iPhone XS Max Covers</p>
+                <p>Oneplus Nord CE Covers</p>
+                <p>iPhone Covers</p>
+            </div>
+            <div>
+                <p>iPhone 13 Covers</p>
+                <p>iPhone 14 Covers</p>
+                <p>iPhone 11 Covers</p>
+                <p>iPhone 12 Covers</p>
+                <p>Oneplus Nord Covers</p>
+                <p>iPhone XS Max Covers</p>
+                <p>Oneplus Nord CE Covers</p>
+                <p>iPhone Covers</p>
+            </div>
+            <div>
+                <p>iPhone 13 Covers</p>
+                <p>iPhone 14 Covers</p>
+                <p>iPhone 11 Covers</p>
+                <p>iPhone 12 Covers</p>
+                <p>Oneplus Nord Covers</p>
+                <p>iPhone XS Max Covers</p>
+                <p>Oneplus Nord CE Covers</p>
+                <p>iPhone Covers</p>
+            </div>
+            <div>
+                <p>iPhone 13 Covers</p>
+                <p>iPhone 14 Covers</p>
+                <p>iPhone 11 Covers</p>
+                <p>iPhone 12 Covers</p>
+                <p>Oneplus Nord Covers</p>
+                <p>iPhone XS Max Covers</p>
+                <p>Oneplus Nord CE Covers</p>
+                <p>iPhone Covers</p>
+            </div>
+            <div>
+                <p>iPhone 13 Covers</p>
+                <p>iPhone 14 Covers</p>
+                <p>iPhone 11 Covers</p>
+                <p>iPhone 12 Covers</p>
+                <p>Oneplus Nord Covers</p>
+                <p>iPhone XS Max Covers</p>
+                <p>Oneplus Nord CE Covers</p>
+                <p>iPhone Covers</p>
+            </div>
+        </div>
+        </div>
+        <div>
+            <div class="case">
+                <h4>HOME OFFICE</h4>
+            </div>
+            <div class="iphone1">
+                <div>
+                    <p>Tech Kit & Organisers</p>
+                </div>
+                <div>
+                    <p>Desks</p>
+                </div>
+                <div>
+                    <p>Organisers</p>
+                </div>
+                <div>
+                    <p>Mobile & Laptops Stands</p>
+                </div>
+                <div>
+                    <p>Stationary</p>
+                </div>
+                <div>
+                    <p>Wireless Charger</p>
+                </div>
+    
+            </div>
+        </div>
+        <div>
+            <div class="case">
+                <h4>BAGS & SLEEVES</h4>
+            </div>
+            <div class="iphone1">
+                <div>
+                    <p>Total Bags</p>
+                    <p>Pouches</p>
+                </div>
+                <div>
+                    <p>Laptop Covers</p>
+                </div>
+                <div>
+                    <p>Crossbody Bags</p>
+                </div>
+                <div>
+                    <p>Mackbook Sleeves</p>
+                </div>
+                <div>
+                    <p>Passport Covers</p>
+                </div>
+                <div>
+                    <p>Messenger Bags</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="case">
+                <h4>WALLETS</h4>
+            </div>
+            <div class="iphone1">
+                <div>
+                    <p>Phone Wallet</p>
+                </div>
+                <div>
+                    <p>Card Holder</p>
+                </div>
+                <div>
+                    <p>Men's Wallet</p>
+                </div>
+                <div>
+                    <p>Women's Wallet</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="case">
+                <h4>OTHERS</h4>
+            </div>
+            <div class="iphone1">
+                <div>
+                    <p>Gifts for All Ocassions</p>
+                </div>
+                <div>
+                    <p>Wireless Charger</p>
+                </div>
+                <div>
+                    <p>Mobile & Laptop Stands</p>
+                </div>
+                <div>
+                    <p>Designer Notebooks & Planners</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="log">
+        <div class="blog">
+          <h3>BLOGS</h3>
+        </div>
+    </div>
+    
+    <div class="whole">
+        <p class="sale">© 2012 - 2023 Firki Wholesale Pvt. Ltd.</p>
+    </div>
+            
 </body>
 </html>
+<script src="bag.js"></script>
